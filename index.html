@@ -16,9 +16,9 @@
               <div class="line" id="line1"></div>
               <div class="line" id="line2"></div>
               <div class="line" id="line3"></div>
-              <span>fechar</span>
-          </div>  
-          <header>
+              <span>Fechar</span>
+            </div>
+          <header id="Home">
            <div class="img-wrapper">
                <img src="imagens/bg.jpg" alt="">
            </div>
@@ -31,11 +31,11 @@
        <aside class="sidebar">
            <nav>
                <ul class="menu">
-                   <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                   <li class="menu-item"><a href="#Home" class="menu-link">Home</a></li>
+                   <li class="menu-item"><a href="#Conhecimentos" class="menu-link">Conhecimento</a></li>
+                   <li class="menu-item"><a href="#Projetos" class="menu-link">Projetos</a></li>
+                   <li class="menu-item"><a href="#Contato" class="menu-link">Contatos</a></li>
+                   <li class="menu-item"><a href="#Orcamento" class="menu-link">Orçamento</a></li>
                </ul>
            </nav>
            <div class="social-media">
@@ -44,7 +44,7 @@
                <a href="#"><i class="fab fa-twitter"></i></a>
            </div>
        </aside>
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="Conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="Projetos">
          <div class="sessao-header">
              <h1>Projetos</h1>
          </div>
@@ -148,10 +148,9 @@
              </div>
          </div>
         </section>
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="Contato">
             <div class="contato-wrapper">
-                <div class="contato-left">
-                </div>
+                <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Contato</h1>
                     <form>
@@ -172,7 +171,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-orcamento">
+        <section class="sessao-orcamento" id="Orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um Orçamento</h1>
                 <form>
@@ -186,17 +185,35 @@
                              <input type="radio" name="layout" id="layout-sim">
                              <label for="layout-sim">Preciso de um layout</label>
                          </div>
-                        <div>
+                     <div>
                             <input type="radio" name="layout" id="layout-nao">
                             <label for="layout-nao">Já tenho um layout</label>
                         </div>
                      </div>
                      <label for="prazo">Prazo</label>
-                     <input type="range" name="prazo" id="prazo">
+                     <input type="range" name="prazo" id="prazo" min="1" max="10">
+                     <label id="preco">R$ 0,00</label>
                      <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021, ETECIA DS - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/guilher_santana/?hl=pt-br"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=pt"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#Home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 <script src="script.js"></script>
